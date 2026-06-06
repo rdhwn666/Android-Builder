@@ -7,13 +7,31 @@
       "device": "miatoll",
       "defconfig": "vendor/xiaomi/miatoll_defconfig"
     },
-    "toolchains": [
-      {
-        "name": "yuki-clang-new",
-        "repo": "https://gitlab.com/klozz/yuki-clang-new",
-        "branch": "main",
-        "binaryEnv": ["bin"]
-      }
+        "toolchains": [
+            {
+                "repo": "https://github.com/LineageOS/android_prebuilts_clang_kernel_linux-x86_clang-r416183b",
+                "branch": "lineage-20.0",
+                "name": "clang",
+                "binaryEnv": [
+                    "bin"
+                ]
+            },
+            {
+                "repo": "https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9",
+                "branch": "lineage-19.1",
+                "name": "aarch64",
+                "binaryEnv": [
+                    "bin"
+                ]
+            },
+            {
+                "repo": "https://github.com/LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9",
+                "branch": "lineage-19.1",
+                "name": "arm",
+                "binaryEnv": [
+                    "bin"
+                ]
+            }
     ],
     "enableCcache": true,
     "params": {
@@ -22,7 +40,19 @@
       "externalCommands": {
         "CLANG_TRIPLE": "aarch64-linux-gnu-",
         "CROSS_COMPILE": "yuki-clang-new/bin/aarch64-linux-gnu-",
-        "CROSS_COMPILE_ARM32": "yuki-clang-new/bin/arm-linux-gnueabi-"
+        "CROSS_COMPILE_ARM32": "yuki-clang-new/bin/arm-linux-gnueabi-",
+        "LD": "ld.lld",
+        "AR": "llvm-ar",
+        "NM": "llvm-nm",
+        "OBJCOPY": "llvm-objcopy",
+        "OBJDUMP": "llvm-objdump",
+        "READELF": "llvm-readelf",
+        "OBJSIZE": "llvm-size",
+        "STRIP": "llvm-strip",
+        "LDGOLD": "aarch64-linux-gnu-ld.gold",
+        "LLVM_AR": "llvm-ar",
+        "LLVM_DIS": "llvm-dis",
+        "CONFIG_THINLTO": ""
       }
     },
     "AnyKernel3": {
