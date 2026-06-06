@@ -1,0 +1,38 @@
+[
+  {
+    "kernelSource": {
+      "name": "miatoll",
+      "repo": "https://github.com/rdhwn666/android_kernel_xiaomi_sm6250",
+      "branch": "16.0",
+      "device": "miatoll",
+      "defconfig": "vendor/xiaomi/miatoll_defconfig"
+    },
+    "toolchains": [
+      {
+        "name": "yuki-clang",
+        "repo": "https://gitlab.com/klozz/yuki-clang-new",
+        "branch": "main",
+        "binaryEnv": ["./bin"]
+      }
+    ],
+    "enableCcache": true,
+    "params": {
+      "ARCH": "arm64",
+      "CC": "clang",
+      "externalCommands": {
+        "CLANG_TRIPLE": "aarch64-linux-gnu-",
+        "CROSS_COMPILE": "yuki-clang-new/bin/aarch64-linux-gnu-",
+        "CROSS_COMPILE_ARM32": "yuki-clang-new/bin/arm-linux-gnueabi-"
+		
+      }
+    },
+    "AnyKernel3": {
+      "use": true,
+      "release": true,
+
+      }
+    },
+    "enableKernelSU": true,
+    "enableLXC": true
+  }
+]
