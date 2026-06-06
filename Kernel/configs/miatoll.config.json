@@ -24,6 +24,8 @@
         "CROSS_COMPILE": "yuki-clang-new/bin/aarch64-linux-gnu-",
         "CROSS_COMPILE_ARM32": "yuki-clang-new/bin/arm-linux-gnueabi-",
 		"LD": "ld.lld",
+		"LLVM": "1",
+		"LLVM_IAS": "1"
       }
     },
     "AnyKernel3": {
