@@ -9,7 +9,7 @@
     },
     "toolchains": [
       {
-        "name": "yuki-clang",
+        "name": "yuki-clang-new",
         "repo": "https://gitlab.com/klozz/yuki-clang-new",
         "branch": "main",
         "binaryEnv": ["bin"]
