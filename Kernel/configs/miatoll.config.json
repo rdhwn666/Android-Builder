@@ -2,8 +2,8 @@
   {
     "kernelSource": {
       "name": "miatoll",
-      "repo": "https://github.com/rdhwn666/kernel_xiaomi_sm6250",
-      "branch": "kinesis-v29",
+      "repo": "https://github.com/rdhwn666/android_kernel_xiaomi_sm6250",
+      "branch": "16.0-old",
       "device": "miatoll",
       "defconfig": "vendor/xiaomi/miatoll_defconfig"
     },
