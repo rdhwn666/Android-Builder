@@ -12,7 +12,7 @@
         "name": "yuki-clang",
         "repo": "https://gitlab.com/klozz/yuki-clang-new",
         "branch": "main",
-        "binaryEnv": ["./bin"]
+        "binaryEnv": ["bin"]
       }
     ],
     "enableCcache": true,
