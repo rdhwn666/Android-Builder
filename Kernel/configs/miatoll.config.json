@@ -39,8 +39,8 @@
       "CC": "clang",
       "externalCommands": {
         "CLANG_TRIPLE": "aarch64-linux-gnu-",
-        "CROSS_COMPILE": "yuki-clang-new/bin/aarch64-linux-gnu-",
-        "CROSS_COMPILE_ARM32": "yuki-clang-new/bin/arm-linux-gnueabi-",
+        "CROSS_COMPILE": "aarch64-linux-android-",
+        "CROSS_COMPILE_ARM32": "arm-linux-androideabi-",
         "LD": "ld.lld",
         "AR": "llvm-ar",
         "NM": "llvm-nm",
