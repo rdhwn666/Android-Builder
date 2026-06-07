@@ -53,7 +53,7 @@
         "LLVM_AR": "llvm-ar",
         "LLVM_DIS": "llvm-dis",
         "CONFIG_THINLTO": "",
-        "DTC_EXT": "/usr/bin/dtc"
+        "DTC_EXT": "../../../../../usr/bin/dtc"
       }
     },
     "AnyKernel3": {
